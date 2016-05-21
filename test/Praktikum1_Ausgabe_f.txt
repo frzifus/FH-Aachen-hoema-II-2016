@@ -1,0 +1,752 @@
+Berechnungen beim Gradientenverfahren zur Testfunktion f:
+
+Schritt 0:
+	 x = ( 3; 2)
+	 lambda = 1
+	 f(x) = 2.65699
+	 grad f(x) = ( 0.753902; 0.0156092)
+	 ||grad f(x)|| = 0.754064
+
+	 x_neu = ( 3.7539; 2.01561)
+	 f(x_neu) = 2.95248
+
+	 Test mit doppelter Schrittweite (lambda = 2):
+	 x_test = ( 4.5078; 2.03122)
+	 f(x_test) = 2.61752
+	 behalte alte Schrittweite!
+
+Schritt 1:
+	 x = ( 3.7539; 2.01561)
+	 lambda = 1
+	 f(x) = 2.95248
+	 grad f(x) = ( 0.03739; -2.84854)
+	 ||grad f(x)|| = 2.84879
+
+	 x_neu = ( 3.79129; -0.832932)
+	 f(x_neu) = -13.2112
+
+	 halbiere Schrittweite (lambda = 0.5):
+	 x_neu = ( 3.7726; 0.591338)
+	 f(x_neu) = 2.59986
+
+	 halbiere Schrittweite (lambda = 0.25):
+	 x_neu = ( 3.76325; 1.30347)
+	 f(x_neu) = 3.01991
+
+Schritt 2:
+	 x = ( 3.76325; 1.30347)
+	 lambda = 0.25
+	 f(x) = 3.01991
+	 grad f(x) = ( 0.681569; 0.232261)
+	 ||grad f(x)|| = 0.720057
+
+	 x_neu = ( 3.93364; 1.36154)
+	 f(x_neu) = 3.17943
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 4.10403; 1.4196)
+	 f(x_test) = 3.38253
+	 verdoppele Schrittweite!
+
+Schritt 3:
+	 x = ( 4.10403; 1.4196)
+	 lambda = 0.5
+	 f(x) = 3.38253
+	 grad f(x) = ( 0.986603; 0.811748)
+	 ||grad f(x)|| = 1.27762
+
+	 x_neu = ( 4.59734; 1.82548)
+	 f(x_neu) = 3.51538
+
+	 Test mit doppelter Schrittweite (lambda = 1):
+	 x_test = ( 5.09064; 2.23135)
+	 f(x_test) = 0.71729
+	 behalte alte Schrittweite!
+
+Schritt 4:
+	 x = ( 4.59734; 1.82548)
+	 lambda = 0.5
+	 f(x) = 3.51538
+	 grad f(x) = ( -0.0756541; -3.18484)
+	 ||grad f(x)|| = 3.18574
+
+	 x_neu = ( 4.55951; 0.23306)
+	 f(x_neu) = 0.789152
+
+	 halbiere Schrittweite (lambda = 0.25):
+	 x_neu = ( 4.57842; 1.02927)
+	 f(x_neu) = 3.39596
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 4.58788; 1.42737)
+	 f(x_neu) = 3.86557
+
+Schritt 5:
+	 x = ( 4.58788; 1.42737)
+	 lambda = 0.125
+	 f(x) = 3.86557
+	 grad f(x) = ( 0.942056; 0.673032)
+	 ||grad f(x)|| = 1.15777
+
+	 x_neu = ( 4.70564; 1.5115)
+	 f(x_neu) = 3.99855
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 4.82339; 1.59563)
+	 f(x_test) = 4.03187
+	 verdoppele Schrittweite!
+
+Schritt 6:
+	 x = ( 4.82339; 1.59563)
+	 lambda = 0.25
+	 f(x) = 4.03187
+	 grad f(x) = ( 0.465807; -1.02295)
+	 ||grad f(x)|| = 1.12401
+
+	 x_neu = ( 4.93984; 1.3399)
+	 f(x_neu) = 4.12943
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 5.0563; 1.08416)
+	 f(x_test) = 3.92788
+	 behalte alte Schrittweite!
+
+Schritt 7:
+	 x = ( 4.93984; 1.3399)
+	 lambda = 0.25
+	 f(x) = 4.12943
+	 grad f(x) = ( 0.899584; 0.71791)
+	 ||grad f(x)|| = 1.15093
+
+	 x_neu = ( 5.16474; 1.51937)
+	 f(x_neu) = 4.25924
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 5.38964; 1.69885)
+	 f(x_test) = 3.78851
+	 behalte alte Schrittweite!
+
+Schritt 8:
+	 x = ( 5.16474; 1.51937)
+	 lambda = 0.25
+	 f(x) = 4.25924
+	 grad f(x) = ( 0.371613; -1.17776)
+	 ||grad f(x)|| = 1.23499
+
+	 x_neu = ( 5.25764; 1.22493)
+	 f(x_neu) = 4.31686
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 5.35055; 0.930495)
+	 f(x_test) = 3.9184
+	 behalte alte Schrittweite!
+
+Schritt 9:
+	 x = ( 5.25764; 1.22493)
+	 lambda = 0.25
+	 f(x) = 4.31686
+	 grad f(x) = ( 0.889329; 0.98092)
+	 ||grad f(x)|| = 1.32405
+
+	 x_neu = ( 5.47998; 1.47016)
+	 f(x_neu) = 4.41825
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 5.70231; 1.71539)
+	 f(x_test) = 3.53397
+	 behalte alte Schrittweite!
+
+Schritt 10:
+	 x = ( 5.47998; 1.47016)
+	 lambda = 0.25
+	 f(x) = 4.41825
+	 grad f(x) = ( 0.211025; -1.53734)
+	 ||grad f(x)|| = 1.55175
+
+	 x_neu = ( 5.53273; 1.08583)
+	 f(x_neu) = 4.39411
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 5.50635; 1.278)
+	 f(x_neu) = 4.54516
+
+Schritt 11:
+	 x = ( 5.50635; 1.278)
+	 lambda = 0.125
+	 f(x) = 4.54516
+	 grad f(x) = ( 0.655128; 0.238369)
+	 ||grad f(x)|| = 0.697146
+
+	 x_neu = ( 5.58825; 1.30779)
+	 f(x_neu) = 4.59463
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 5.67014; 1.33759)
+	 f(x_test) = 4.61969
+	 verdoppele Schrittweite!
+
+Schritt 12:
+	 x = ( 5.67014; 1.33759)
+	 lambda = 0.25
+	 f(x) = 4.61969
+	 grad f(x) = ( 0.384532; -0.654942)
+	 ||grad f(x)|| = 0.759483
+
+	 x_neu = ( 5.76627; 1.17385)
+	 f(x_neu) = 4.67308
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 5.8624; 1.01012)
+	 f(x_test) = 4.56397
+	 behalte alte Schrittweite!
+
+Schritt 13:
+	 x = ( 5.76627; 1.17385)
+	 lambda = 0.25
+	 f(x) = 4.67308
+	 grad f(x) = ( 0.651667; 0.577478)
+	 ||grad f(x)|| = 0.870719
+
+	 x_neu = ( 5.92919; 1.31822)
+	 f(x_neu) = 4.71098
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.0921; 1.46259)
+	 f(x_test) = 4.38668
+	 behalte alte Schrittweite!
+
+Schritt 14:
+	 x = ( 5.92919; 1.31822)
+	 lambda = 0.25
+	 f(x) = 4.71098
+	 grad f(x) = ( 0.185994; -1.11518)
+	 ||grad f(x)|| = 1.13058
+
+	 x_neu = ( 5.97568; 1.03943)
+	 f(x_neu) = 4.69362
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 5.95244; 1.17883)
+	 f(x_neu) = 4.78159
+
+Schritt 15:
+	 x = ( 5.95244; 1.17883)
+	 lambda = 0.125
+	 f(x) = 4.78159
+	 grad f(x) = ( 0.489848; 0.177872)
+	 ||grad f(x)|| = 0.521143
+
+	 x_neu = ( 6.01367; 1.20106)
+	 f(x_neu) = 4.80878
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.0749; 1.22329)
+	 f(x_test) = 4.82188
+	 verdoppele Schrittweite!
+
+Schritt 16:
+	 x = ( 6.0749; 1.22329)
+	 lambda = 0.25
+	 f(x) = 4.82188
+	 grad f(x) = ( 0.278888; -0.507859)
+	 ||grad f(x)|| = 0.579395
+
+	 x_neu = ( 6.14462; 1.09633)
+	 f(x_neu) = 4.84705
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.21434; 0.969365)
+	 f(x_test) = 4.76202
+	 behalte alte Schrittweite!
+
+Schritt 17:
+	 x = ( 6.14462; 1.09633)
+	 lambda = 0.25
+	 f(x) = 4.84705
+	 grad f(x) = ( 0.485928; 0.515336)
+	 ||grad f(x)|| = 0.708306
+
+	 x_neu = ( 6.2661; 1.22516)
+	 f(x_neu) = 4.85555
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.38758; 1.354)
+	 f(x_test) = 4.60186
+	 behalte alte Schrittweite!
+
+Schritt 18:
+	 x = ( 6.2661; 1.22516)
+	 lambda = 0.25
+	 f(x) = 4.85555
+	 grad f(x) = ( 0.0867461; -0.986328)
+	 ||grad f(x)|| = 0.990135
+
+	 x_neu = ( 6.28779; 0.978581)
+	 f(x_neu) = 4.81908
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.27694; 1.10187)
+	 f(x_neu) = 4.90479
+
+Schritt 19:
+	 x = ( 6.27694; 1.10187)
+	 lambda = 0.125
+	 f(x) = 4.90479
+	 grad f(x) = ( 0.355; 0.20223)
+	 ||grad f(x)|| = 0.408561
+
+	 x_neu = ( 6.32132; 1.12715)
+	 f(x_neu) = 4.91938
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.36569; 1.15243)
+	 f(x_test) = 4.92103
+	 verdoppele Schrittweite!
+
+Schritt 20:
+	 x = ( 6.36569; 1.15243)
+	 lambda = 0.25
+	 f(x) = 4.92103
+	 grad f(x) = ( 0.159508; -0.477231)
+	 ||grad f(x)|| = 0.503182
+
+	 x_neu = ( 6.40557; 1.03312)
+	 f(x_neu) = 4.92501
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.44545; 0.913814)
+	 f(x_test) = 4.8171
+	 behalte alte Schrittweite!
+
+Schritt 21:
+	 x = ( 6.40557; 1.03312)
+	 lambda = 0.25
+	 f(x) = 4.92501
+	 grad f(x) = ( 0.371913; 0.573021)
+	 ||grad f(x)|| = 0.683134
+
+	 x_neu = ( 6.49855; 1.17638)
+	 f(x_neu) = 4.91176
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.45206; 1.10475)
+	 f(x_neu) = 4.95182
+
+Schritt 22:
+	 x = ( 6.45206; 1.10475)
+	 lambda = 0.125
+	 f(x) = 4.95182
+	 grad f(x) = ( 0.180455; -0.196866)
+	 ||grad f(x)|| = 0.267058
+
+	 x_neu = ( 6.47462; 1.08014)
+	 f(x_neu) = 4.95872
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.49717; 1.05553)
+	 f(x_test) = 4.96162
+	 verdoppele Schrittweite!
+
+Schritt 23:
+	 x = ( 6.49717; 1.05553)
+	 lambda = 0.25
+	 f(x) = 4.96162
+	 grad f(x) = ( 0.240282; 0.183304)
+	 ||grad f(x)|| = 0.302219
+
+	 x_neu = ( 6.55725; 1.10136)
+	 f(x_neu) = 4.96672
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.61732; 1.14719)
+	 f(x_test) = 4.93505
+	 behalte alte Schrittweite!
+
+Schritt 24:
+	 x = ( 6.55725; 1.10136)
+	 lambda = 0.25
+	 f(x) = 4.96672
+	 grad f(x) = ( 0.0836463; -0.393086)
+	 ||grad f(x)|| = 0.401887
+
+	 x_neu = ( 6.57816; 1.00309)
+	 f(x_neu) = 4.96384
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.5677; 1.05222)
+	 f(x_neu) = 4.97596
+
+Schritt 25:
+	 x = ( 6.5677; 1.05222)
+	 lambda = 0.125
+	 f(x) = 4.97596
+	 grad f(x) = ( 0.17815; 0.0697476)
+	 ||grad f(x)|| = 0.191317
+
+	 x_neu = ( 6.58997; 1.06094)
+	 f(x_neu) = 4.97952
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.61224; 1.06966)
+	 f(x_test) = 4.98102
+	 verdoppele Schrittweite!
+
+Schritt 26:
+	 x = ( 6.61224; 1.06966)
+	 lambda = 0.25
+	 f(x) = 4.98102
+	 grad f(x) = ( 0.0974148; -0.195004)
+	 ||grad f(x)|| = 0.217982
+
+	 x_neu = ( 6.63659; 1.02091)
+	 f(x_neu) = 4.9834
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.66095; 0.972159)
+	 f(x_test) = 4.96707
+	 behalte alte Schrittweite!
+
+Schritt 27:
+	 x = ( 6.63659; 1.02091)
+	 lambda = 0.25
+	 f(x) = 4.9834
+	 grad f(x) = ( 0.174239; 0.231619)
+	 ||grad f(x)|| = 0.289839
+
+	 x_neu = ( 6.68015; 1.07881)
+	 f(x_neu) = 4.9818
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.65837; 1.04986)
+	 f(x_neu) = 4.98831
+
+Schritt 28:
+	 x = ( 6.65837; 1.04986)
+	 lambda = 0.125
+	 f(x) = 4.98831
+	 grad f(x) = ( 0.0932637; -0.0958853)
+	 ||grad f(x)|| = 0.133761
+
+	 x_neu = ( 6.67003; 1.03788)
+	 f(x_neu) = 4.99006
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.68169; 1.02589)
+	 f(x_test) = 4.99083
+	 verdoppele Schrittweite!
+
+Schritt 29:
+	 x = ( 6.68169; 1.02589)
+	 lambda = 0.25
+	 f(x) = 4.99083
+	 grad f(x) = ( 0.119555; 0.0919684)
+	 ||grad f(x)|| = 0.150837
+
+	 x_neu = ( 6.71158; 1.04888)
+	 f(x_neu) = 4.99206
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.74147; 1.07187)
+	 f(x_test) = 4.98421
+	 behalte alte Schrittweite!
+
+Schritt 30:
+	 x = ( 6.71158; 1.04888)
+	 lambda = 0.25
+	 f(x) = 4.99206
+	 grad f(x) = ( 0.0422371; -0.197524)
+	 ||grad f(x)|| = 0.20199
+
+	 x_neu = ( 6.72214; 0.999502)
+	 f(x_neu) = 4.99119
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.71686; 1.02419)
+	 f(x_neu) = 4.99438
+
+Schritt 31:
+	 x = ( 6.71686; 1.02419)
+	 lambda = 0.125
+	 f(x) = 4.99438
+	 grad f(x) = ( 0.0880413; 0.0369448)
+	 ||grad f(x)|| = 0.0954788
+
+	 x_neu = ( 6.72786; 1.02881)
+	 f(x_neu) = 4.99525
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.73887; 1.03343)
+	 f(x_test) = 4.99557
+	 verdoppele Schrittweite!
+
+Schritt 32:
+	 x = ( 6.73887; 1.03343)
+	 lambda = 0.25
+	 f(x) = 4.99557
+	 grad f(x) = ( 0.0471231; -0.0998215)
+	 ||grad f(x)|| = 0.110385
+
+	 x_neu = ( 6.75065; 1.00847)
+	 f(x_neu) = 4.99606
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.76243; 0.983518)
+	 f(x_test) = 4.99147
+	 behalte alte Schrittweite!
+
+Schritt 33:
+	 x = ( 6.75065; 1.00847)
+	 lambda = 0.25
+	 f(x) = 4.99606
+	 grad f(x) = ( 0.086209; 0.123256)
+	 ||grad f(x)|| = 0.150413
+
+	 x_neu = ( 6.7722; 1.03929)
+	 f(x_neu) = 4.99543
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.76142; 1.02388)
+	 f(x_neu) = 4.99732
+
+Schritt 34:
+	 x = ( 6.76142; 1.02388)
+	 lambda = 0.125
+	 f(x) = 4.99732
+	 grad f(x) = ( 0.0442132; -0.0510315)
+	 ||grad f(x)|| = 0.0675205
+
+	 x_neu = ( 6.76695; 1.0175)
+	 f(x_neu) = 4.99775
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.77248; 1.01112)
+	 f(x_test) = 4.99788
+	 verdoppele Schrittweite!
+
+Schritt 35:
+	 x = ( 6.77248; 1.01112)
+	 lambda = 0.25
+	 f(x) = 4.99788
+	 grad f(x) = ( 0.0591021; 0.053157)
+	 ||grad f(x)|| = 0.0794905
+
+	 x_neu = ( 6.78725; 1.02441)
+	 f(x_neu) = 4.99808
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.80203; 1.0377)
+	 f(x_test) = 4.99548
+	 behalte alte Schrittweite!
+
+Schritt 36:
+	 x = ( 6.78725; 1.02441)
+	 lambda = 0.25
+	 f(x) = 4.99808
+	 grad f(x) = ( 0.0173094; -0.109217)
+	 ||grad f(x)|| = 0.11058
+
+	 x_neu = ( 6.79158; 0.997107)
+	 f(x_neu) = 4.99765
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.78942; 1.01076)
+	 f(x_neu) = 4.99873
+
+Schritt 37:
+	 x = ( 6.78942; 1.01076)
+	 lambda = 0.125
+	 f(x) = 4.99873
+	 grad f(x) = ( 0.0429178; 0.0225504)
+	 ||grad f(x)|| = 0.0484815
+
+	 x_neu = ( 6.79478; 1.01358)
+	 f(x_neu) = 4.99894
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.80015; 1.0164)
+	 f(x_test) = 4.99898
+	 verdoppele Schrittweite!
+
+Schritt 38:
+	 x = ( 6.80015; 1.0164)
+	 lambda = 0.25
+	 f(x) = 4.99898
+	 grad f(x) = ( 0.0207717; -0.0553503)
+	 ||grad f(x)|| = 0.0591195
+
+	 x_neu = ( 6.80534; 1.00256)
+	 f(x_neu) = 4.99903
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.81053; 0.988722)
+	 f(x_test) = 4.99745
+	 behalte alte Schrittweite!
+
+Schritt 39:
+	 x = ( 6.80534; 1.00256)
+	 lambda = 0.25
+	 f(x) = 4.99903
+	 grad f(x) = ( 0.043504; 0.0718942)
+	 ||grad f(x)|| = 0.084032
+
+	 x_neu = ( 6.81621; 1.02053)
+	 f(x_neu) = 4.99874
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.81078; 1.01155)
+	 f(x_neu) = 4.9994
+
+Schritt 40:
+	 x = ( 6.81078; 1.01155)
+	 lambda = 0.125
+	 f(x) = 4.9994
+	 grad f(x) = ( 0.0199782; -0.0284593)
+	 ||grad f(x)|| = 0.0347715
+
+	 x_neu = ( 6.81327; 1.00799)
+	 f(x_neu) = 4.9995
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.81577; 1.00443)
+	 f(x_test) = 4.99951
+	 verdoppele Schrittweite!
+
+Schritt 41:
+	 x = ( 6.81577; 1.00443)
+	 lambda = 0.25
+	 f(x) = 4.99951
+	 grad f(x) = ( 0.029324; 0.032379)
+	 ||grad f(x)|| = 0.0436841
+
+	 x_neu = ( 6.8231; 1.01253)
+	 f(x_neu) = 4.99952
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.83043; 1.02062)
+	 f(x_test) = 4.99857
+	 behalte alte Schrittweite!
+
+Schritt 42:
+	 x = ( 6.8231; 1.01253)
+	 lambda = 0.25
+	 f(x) = 4.99952
+	 grad f(x) = ( 0.00567049; -0.0632026)
+	 ||grad f(x)|| = 0.0634565
+
+	 x_neu = ( 6.82452; 0.996725)
+	 f(x_neu) = 4.99932
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.82381; 1.00463)
+	 f(x_neu) = 4.99972
+
+Schritt 43:
+	 x = ( 6.82381; 1.00463)
+	 lambda = 0.125
+	 f(x) = 4.99972
+	 grad f(x) = ( 0.0208964; 0.0142958)
+	 ||grad f(x)|| = 0.0253185
+
+	 x_neu = ( 6.82642; 1.00641)
+	 f(x_neu) = 4.99977
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.82904; 1.0082)
+	 f(x_test) = 4.99976
+	 behalte alte Schrittweite!
+
+Schritt 44:
+	 x = ( 6.82642; 1.00641)
+	 lambda = 0.125
+	 f(x) = 4.99977
+	 grad f(x) = ( 0.0146915; -0.00878142)
+	 ||grad f(x)|| = 0.0171159
+
+	 x_neu = ( 6.82826; 1.00532)
+	 f(x_neu) = 4.9998
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.8301; 1.00422)
+	 f(x_test) = 4.99983
+	 verdoppele Schrittweite!
+
+Schritt 45:
+	 x = ( 6.8301; 1.00422)
+	 lambda = 0.25
+	 f(x) = 4.99983
+	 grad f(x) = ( 0.0154326; 0.00574474)
+	 ||grad f(x)|| = 0.0164672
+
+	 x_neu = ( 6.83395; 1.00565)
+	 f(x_neu) = 4.99987
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.83781; 1.00709)
+	 f(x_test) = 4.99985
+	 behalte alte Schrittweite!
+
+Schritt 46:
+	 x = ( 6.83395; 1.00565)
+	 lambda = 0.25
+	 f(x) = 4.99987
+	 grad f(x) = ( 0.00868852; -0.0163501)
+	 ||grad f(x)|| = 0.0185153
+
+	 x_neu = ( 6.83613; 1.00157)
+	 f(x_neu) = 4.99988
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.8383; 0.997478)
+	 f(x_test) = 4.99977
+	 behalte alte Schrittweite!
+
+Schritt 47:
+	 x = ( 6.83613; 1.00157)
+	 lambda = 0.25
+	 f(x) = 4.99988
+	 grad f(x) = ( 0.0147205; 0.0200984)
+	 ||grad f(x)|| = 0.0249126
+
+	 x_neu = ( 6.83981; 1.00659)
+	 f(x_neu) = 4.99987
+
+	 halbiere Schrittweite (lambda = 0.125):
+	 x_neu = ( 6.83797; 1.00408)
+	 f(x_neu) = 4.99992
+
+Schritt 48:
+	 x = ( 6.83797; 1.00408)
+	 lambda = 0.125
+	 f(x) = 4.99992
+	 grad f(x) = ( 0.00784208; -0.00867182)
+	 ||grad f(x)|| = 0.0116918
+
+	 x_neu = ( 6.83895; 1.00299)
+	 f(x_neu) = 4.99993
+
+	 Test mit doppelter Schrittweite (lambda = 0.25):
+	 x_test = ( 6.83993; 1.00191)
+	 f(x_test) = 4.99994
+	 verdoppele Schrittweite!
+
+Schritt 49:
+	 x = ( 6.83993; 1.00191)
+	 lambda = 0.25
+	 f(x) = 4.99994
+	 grad f(x) = ( 0.0102303; 0.0090485)
+	 ||grad f(x)|| = 0.0136578
+
+	 x_neu = ( 6.84248; 1.00417)
+	 f(x_neu) = 4.99994
+
+	 Test mit doppelter Schrittweite (lambda = 0.5):
+	 x_test = ( 6.84504; 1.00643)
+	 f(x_test) = 4.99987
+	 behalte alte Schrittweite!
+
+Ende wegen Schrittanzahl = 50 bei 
+	 x = ( 6.84248; 1.00417)
+	 lambda = 0.25
+	 f(x) = 4.99994
+	 grad f(x) = ( 0.00313491; -0.0186866)
+	 ||grad f(x)|| = 0.0189477
