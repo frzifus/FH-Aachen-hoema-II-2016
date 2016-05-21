@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=-std=c++14 -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion # -O3
+CXXFLAGS=-std=c++14 -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -O3
 LDFLAGS= 
 
 .PHONY: lesson1 lesson2 lesson3 lesson4 lesson5 clean
